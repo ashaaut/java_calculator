@@ -5,7 +5,11 @@ public class TryCatch{
         char [] chars=str.toCharArray();
         char lastChar=chars[chars.length];
         System.out.println("last char: "+lastChar);
-        } catch(Exception e){
+        String str1=null;
+        System.out.println(str1.length());
+        } catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        } catch(NullPointerException e){
             e.printStackTrace();
         }
     
